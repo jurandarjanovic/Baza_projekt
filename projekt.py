@@ -39,7 +39,10 @@ scroll_bar.grid(row=1, column=8, rowspan=14, sticky=W)
 list_bx.configure(yscrollcommand=scroll_bar.set)
 scroll_bar.configure(command=list_bx.yview)
 
-modify_btn = Button(root, text="Izmijeni podatke", bg="orange", fg="black", font="helvetica 10 bold", command="")
-modify_btn.grid(row=15, column=4)
+Izmijeni_btn = Button(root, text="Izmijeni podatke", bg="orange", fg="black", font="helvetica 10 bold", command="")
+Izmijeni_btn.grid(row=15, column=4)
+
+Obrisi_btn = Button(root, text="Obrisi podatke", bg="red", fg="black", font="helvetica 10 bold", command="")
+Obrisi_btn.grid(row=15, column=2)
 
 root.mainloop()
